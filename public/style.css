@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.ctn {
+    background-color: #ccc;
+    height: 100vh;
+}
+
+h1 {
+    margin: 0;
+}

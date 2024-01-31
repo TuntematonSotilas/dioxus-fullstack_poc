@@ -17,7 +17,10 @@ fn main() {
 
 fn app(cx: Scope) -> Element {
     render! {
-        Router::<Route> { }
+        div {
+            class: "ctn",
+            Router::<Route> { }
+        }
     }
 }
 
@@ -36,6 +39,9 @@ fn Index(cx: Scope) -> Element {
 fn Home(cx: Scope) -> Element {
     render! {
         h1 { "Home" }
-        Outlet::<Route> { }
+        Link {
+            to: Route::Index {},
+            "Go to index"
+        }
     }
 }
