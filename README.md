@@ -14,7 +14,11 @@ Make sure you have basic tools installed:
 - [Rust](https://www.rust-lang.org)
 - [Doxius CLI](https://github.com/DioxusLabs/dioxus/tree/master/packages/cli)
 
-## Run (Hot Reload)
+## Run 
+    dx build --features web
+    cargo run --features ssr --release
 
+
+## Hot Reload
     dx build --features web
     dx serve --features ssr --hot-reload --platform desktop
